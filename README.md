@@ -23,3 +23,9 @@ since it will assure that you and your team have the same version
 of every package of your project.
 3. For running anything using Poetry virtualenv, use `poetry run`. Example `poetry run my_script.py`.
 4. If you want to adapt some linter rule to your project, edit `setup.cfg`. 
+
+## Optional: pre-commit hook
+In order to mantain an optimal code quality, you can use the `.pre-commit-config.yaml``
+file to setup a git pre-commit hook. It won't let you commit if your code
+violates some of the rules specified in the `setup.cfg` file.
+If you want to use it, run `poetry run pre-commit install`.
