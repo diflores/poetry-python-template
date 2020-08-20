@@ -8,8 +8,8 @@ repos:
             flake8-quotes, yesqa]
           language_version: python3.8
           args: ['--config=setup.cfg']
-    - repo: https://github.com/pre-commit/mirrors-isort
-      rev: v4.3.21
+    - repo: https://github.com/timothycrosley/isort
+      rev: v5.4.2
       hooks:
         - id: isort
           language_version: python3.8
